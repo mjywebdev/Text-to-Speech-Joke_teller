@@ -28,7 +28,7 @@ function toggleButton() {
 //Get Jokes from API
 async function getJokes() {
     let joke = '';
-    const apiURL = 'https://v2.jokeapi.dev/joke/Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
+    const apiURL = 'https://v2.jokeapi.dev/joke/Miscellaneous,Pun,Spooky?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
     try {
       const response = await fetch(apiURL);
       const data = await response.json();
